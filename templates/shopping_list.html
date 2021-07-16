@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping list</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='shopping_list.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Add new product</h1>
+        <form action = "http://localhost:5000/showitems" method = "post">
+            <div class="row">
+                <input type="text" name="name" placeholder="Product name">
+                <input type="text" name="item id" placeholder="Product id">
+            </div>
+            <div class="row">
+                <input type="text" name="quantity" placeholder="Product quantity">
+                <input type="text" name="price" placeholder="Product price">
+            </div>
+            <button type="submit">ADD ITEM</button>
+        </form>
+    </div>
+</body>
+</html>
